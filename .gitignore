@@ -1,0 +1,9 @@
+
+DOMAIN-SUFFIX,creative.myavlive.com,REJECT
+DOMAIN-SUFFIX,trackwilltrk.com,REJECT
+DOMAIN-SUFFIX,tsyndicate.com,REJECT
+
+^https:\/\/missav\.(?:ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body  https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/missav.html.js
+
+
+hostname = missav.ai, missav.ws
