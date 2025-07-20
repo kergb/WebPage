@@ -6,12 +6,12 @@
 ^https:\/\/mmfree3\.com\/A_PH url reject-img
 ^https:\/\/18av\.mm-cg\.com\/adcg url reject-img
 
-# 百度//boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
-## 百度防跳转
+#百度//boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
+#百度防跳转
 ^https:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-body https://raw.githubusercontent.com/Kergb/QuantumX/refs/heads/main/baiduNoRedirect.js
-# 百度首页
+#百度首页
 ^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ url script-response-body https://raw.githubusercontent.com/Kergb/QuantumX/refs/heads/main/Baidu.js
-## 百度知道
+#百度知道
 #^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) url script-response-body https://raw.githubusercontent.com/Keygb/QuantumX/refs/heads/main/baiduzhidao.js
 
 # 桌面端请使用 https://google.com/ncr
