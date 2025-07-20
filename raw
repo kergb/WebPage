@@ -1,0 +1,18 @@
+#!name = WebPage
+#!desc = 移除网页广告。
+
+^https:\/\/18av\.mm-cg\.com\/adcg\/91porn url reject-img
+^https:\/\/18av\.mm-cg\.com\/adcg\/hgame url reject-img
+^https:\/\/mmfree3\.com\/A_PH url reject-img
+^https:\/\/18av\.mm-cg\.com\/adcg url reject-img
+
+
+
+# 桌面端请使用 https://google.com/ncr
+# 谷歌服务重定向//www.google.cn
+^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
+^https?:\/\/translate\.google\.cn url 302 https://translate.google.com
+
+
+hostname=api.hechuangxinxi.xyz, 18av.mm-cg.com, mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, www.google.cn, www.google.com, javdb.com, missav.com, missav.ai, missav.ws
+
