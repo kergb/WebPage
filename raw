@@ -1,35 +1,31 @@
 #!name = WebPage
 #!desc = 移除网页广告。
 
+#百度//boxer.baidu.com, m.baidu.com, www.baidu.com
+#百度防跳转
+^https:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/baiduredirect.js
+
+#百度首页
+^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/baidu.js
+
+#谷歌服务重定向//www.google.cn
+^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
+^https?:\/\/translate\.google\.cn url 302 https://translate.google.com
+
+#解决谷歌搜索人机验证
+^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/google.js
+
+#JavDB//javdb.co
+^https:\/\/javdb\.com\/(?!over18\?) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/javdb.js
+
+#Missav.com
+^https:\/\/missav\.(live|ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/missav.js
+
+#18av去广告
 ^https:\/\/18av\.mm-cg\.com\/adcg\/91porn url reject-img
 ^https:\/\/18av\.mm-cg\.com\/adcg\/hgame url reject-img
 ^https:\/\/mmfree3\.com\/A_PH url reject-img
 ^https:\/\/18av\.mm-cg\.com\/adcg url reject-img
 
-#百度//boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
-#百度防跳转
-^https:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/baiduNoRedirect.js
-#百度首页
-^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/baidu.js
-#百度知道
-#^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) url script-response-body https://raw.githubusercontent.com/Keygb/QuantumX/refs/heads/main/baiduzhidao.js
-
-# 桌面端请使用 https://google.com/ncr
-# 谷歌服务重定向//www.google.cn
-^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
-^https?:\/\/translate\.google\.cn url 302 https://translate.google.com
-
-#Google
-#^https?:\/\/(www\.google)(\.\w{2,4}){1,2}\/(search\?|\?sa=|\?FORM)(?!.*?(apps=)) url script-response-body https://raw.githubusercontent.com/Keygb/QuantumX/refs/heads/main/Webpage.js
-
-# JavDB //javdb.co
-^https:\/\/javdb\.com\/(?!over18\?) url script-response-body https://raw.githubusercontent.com/Keygb/QuantumX/refs/heads/main/javdb.js
-#会员部分
-#^https:\/\/api\.hechuangxinxi\.xyz\/api\/v1\/movies\/\w+\/play\? url script-response-body https://raw.githubusercontent.com/Keygb/WebPage/refs/heads/main/javdb.js
-
-#Missav.com
-^https:\/\/missav\.(live|ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/missav.js
-
-
-hostname=api.hechuangxinxi.xyz, 18av.mm-cg.com, mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, javdb.com, missav.live, missav.ai, missav.ws
+hostname = api.hechuangxinxi.xyz, 18av.mm-cg.com, mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, www.google.com*, javdb.com, missav.live, missav.ai, missav.ws
 
