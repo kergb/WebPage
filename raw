@@ -28,8 +28,8 @@
 #^https:\/\/api\.hechuangxinxi\.xyz\/api\/v1\/movies\/\w+\/play\? url script-response-body https://raw.githubusercontent.com/Keygb/WebPage/refs/heads/main/javdb.js
 
 #Missav.com
-^https:\/\/missav\.(?:ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/missav.js
+^https:\/\/missav\.(live|ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/missav.js
 
 
-hostname=api.hechuangxinxi.xyz, 18av.mm-cg.com, mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, javdb.com, missav.com, missav.ai, missav.ws
+hostname=api.hechuangxinxi.xyz, 18av.mm-cg.com, mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, javdb.com, missav.live. missav.ai, missav.ws
 
