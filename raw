@@ -19,7 +19,7 @@
 ^https:\/\/javdb\.com\/(?!over18\?) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/javdb.js
 
 #Missav.com
-^https:\/\/missav\.(ai|live|ws)\/(?!favicon)(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/missav.js
+^https:\/\/missav\.(ai|live|ws)\/(?!favicon)(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/webpage.js
 
 host, missav.live, 全球加速
 host, missav.live, 全球加速
