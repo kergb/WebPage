@@ -19,13 +19,20 @@
 ^https:\/\/javdb\.com\/(?!over18\?) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/javdb.js
 
 #Missav.com
-^https:\/\/missav\.(live|ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/missav.js
+^https:\/\/missav\.(ai|live|ws)\/(?!favicon)(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/missav.js
 
 #18av去广告
 ^https:\/\/18av\.mm-cg\.com\/adcg\/91porn url reject-img
 ^https:\/\/18av\.mm-cg\.com\/adcg\/hgame url reject-img
 ^https:\/\/mmfree3\.com\/A_PH url reject-img
 ^https:\/\/18av\.mm-cg\.com\/adcg url reject-img
+#missav
+DOMAIN-SUFFIX,trackwilltrk.com,REJECT
+DOMAIN,creative.myavlive.com,REJECT
+DOMAIN-SUFFIX,tsyndicate.com,REJECT
+host, missav.live, 全球加速
+host, missav.live, 全球加速
+host, missav.ws, 全球加速
 
 hostname = api.hechuangxinxi.xyz, 18av.mm-cg.com, mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, www.google.com*, javdb.com, missav.live, missav.ai, missav.ws
 
