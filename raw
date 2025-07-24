@@ -16,7 +16,7 @@
 ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/google.js
 
 #JavDB//javdb.co
-^https:\/\/javdb\.com\/(?!over18\?) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/javdb.js
+^https:\/\/javdb\.com\/ url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/javdb.js
 
 #Missav.com
 ^https:\/\/missav\.(fans|ai|live|ws)\/(?!favicon)(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/webpage.js
