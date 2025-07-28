@@ -21,13 +21,8 @@
 #Missav.com
 https:\/\/missav\.(?:fans|live|ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/webpage.js
 
-host, missav.live, 全球加速
-host, missav.live, 全球加速
-host, missav.fans, 全球加速
-host, missav.ws, 全球加速
-DOMAIN-SUFFIX,trackwilltrk.com,REJECT
-DOMAIN,creative.myavlive.com,REJECT
-DOMAIN-SUFFIX,tsyndicate.com,REJECT
+#微博热搜顶部的tab页分组
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(page|flowpage)\? url jsonjq-response-body .pageHeader={}
 
 #18av去广告
 ^https:\/\/18av\.mm-cg\.com\/adcg\/91porn url reject-img
