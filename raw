@@ -15,8 +15,8 @@
 #解决谷歌搜索人机验证
 ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/google.js
 
-#JavDB//javdb.co
-^https:\/\/javdb\.com\/ url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/javdb.js
+#JavDB//javdb.com
+^https:\/\/api\.hechuangxinxi\.xyz\/api\/(v1\/(ads|startup|users)|v4\/movies\/\w+) url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/javdb.js
 
 #Missav.com
 https:\/\/missav\.(?:fans|live|ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/webpage.js
