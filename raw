@@ -21,8 +21,6 @@
 #Missav.com
 ^https:\/\/missav\.(?:fans|live|ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/webpage.js
 
-
-^https:\/\/njavtv\.(?:fans|live|ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/webpage.js
 #微博热搜顶部的tab页分组
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(page|flowpage)\? url jsonjq-response-body .pageHeader={}
 
@@ -39,5 +37,5 @@
 
 
 
-hostname = njavtv.com,18av.mm-cg.com, mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, www.google.com*, javdb.com, missav.live, missav.ai, missav.ws, missav.fans, pornhub.com, www.pornhub.com
+hostname = 18av.mm-cg.com, mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, www.google.com*, javdb.com, missav.live, missav.ai, missav.ws, missav.fans, pornhub.com, www.pornhub.com
 
