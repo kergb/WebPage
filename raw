@@ -24,10 +24,10 @@
 #微博热搜顶部的tab页分组
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(page|flowpage)\? url jsonjq-response-body .pageHeader={}
 
-#Pornhub//pornhub.com, www.pornhub.com
+#Pornhub//*.pornhub.com
 https:\/\/cn\.pornhub\.com\/(?:interstitial|_xa\/ads) url reject-dict
 https?:\/\/cn\.pornhub\.com\/ url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/pornhub.js
- 
+
 
 #18av去广告
 ^https:\/\/18av\.mm-cg\.com\/adcg\/91porn url reject-img
@@ -37,5 +37,5 @@ https?:\/\/cn\.pornhub\.com\/ url script-response-body https://raw.githubusercon
 
 
 
-hostname =18av.mm-cg.com , mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, www.google.com*, javdb.com, missav.live, missav.ai, missav.ws, missav.fans, pornhub.com, www.pornhub.com
+hostname =18av.mm-cg.com , mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, www.google.com*, javdb.com, missav.live, missav.ai, missav.ws, missav.fans, *.pornhub.com
 
