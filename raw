@@ -26,7 +26,7 @@
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(page|flowpage)\? url jsonjq-response-body .pageHeader={}
 
 #Pornhub//*.pornhub.com
-^https:\/\/www\.pornhub\.com\/ 302 https://cn.pornhub.com/
+^https:\/\/www\.pornhub\.com\/ url 302 https://cn.pornhub.com/
 ^https:\/\/cn\.pornhub\.com\/(?:interstitial|_xa\/ads) url reject-dict
 ^https?:\/\/cn\.pornhub\.com\/ url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/pornhub.js
 
