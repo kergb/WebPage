@@ -2,7 +2,7 @@
 #!desc = 移除网页广告。
 #missav
 host-suffix, tsyndicate.com,reject
-host, creative.myavlive.com,,reject
+host, creative.myavlive.com,reject
 host-suffix, trackwilltrk.com,reject
 #百度//boxer.baidu.com, m.baidu.com, www.baidu.com
 #百度防跳转
