@@ -1,9 +1,5 @@
 #!name = WebPage
 #!desc = 移除网页广告。
-#missav
-host-suffix, tsyndicate.com,reject
-host, creative.myavlive.com,reject
-host-suffix, trackwilltrk.com,reject
 #百度//boxer.baidu.com, m.baidu.com, www.baidu.com
 #百度防跳转
 ^https:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-body https://raw.githubusercontent.com/kergb/QuantumultX/refs/heads/main/baiduredirect.js
@@ -42,5 +38,5 @@ host-suffix, trackwilltrk.com,reject
 
 
 
-hostname =18av.mm-cg.com , mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, www.google.com*, javdb.com, www.missav.live, www.missav.ai, www.missav.ws,  *.pornhub.com
+hostname =18av.mm-cg.com , mmfree3.com, boxer.baidu.com, m.baidu.com, www.baidu.com, www.google.cn, www.google.com, www.google.com*, javdb.com , missav.live, missav.ai, missav.ws, *.pornhub.com
 
